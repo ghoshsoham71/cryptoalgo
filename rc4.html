@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RC4 Algorithm - cryptoalgo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="learn_more.html" class="back-button">&#8592;</a>
+        <div class="algorithm-detail">
+            <h1>RC4(Rivest Cipher 4)</h1>
+            
+            <section>
+                <h2><b>Overview</b></h2>
+                <p>RC4 is a stream cipher known for its simplicity and speed, utilizing a variable-length key to initialize a state array. It generates a pseudorandom keystream, which is XORed with plaintext for encryption, and with ciphertext for decryption.</p>
+            </section>
+            
+            <section>
+                <h2><b>Working</b></h2>
+                <p>RC4 algorithm uses a key-scheduled permutation array (S-box) and generates a keystream by performing byte-wise XOR operations between the S-box and plaintext, producing a secure ciphertext stream. It operates efficiently with variable key lengths.</p>
+            </section>
+            
+            <section>
+                <h2><b>Application</b></h2>
+                <p>RC4 algorithm is used in industrial applications for its simplicity and speed in streaming encryption. It efficiently secures data transmission, IoT devices, and secure protocols where lightweight implementation and rapid processing are critical.</p>
+            </section>
+
+            <section>
+                <b>Time Complexity: </b>O(N) RC4 encryption and decryption operations have a linear time complexity, making them suitable for applications where efficiency is crucial.
+            </i><br>
+                <br>
+                <b>Space Complexity: </b> O(1) The space complexity of RC4 is constant and independent of the input size, primarily due to its fixed-size key schedule and internal state.</i>
+            </section>
+            
+            <section>
+                <h2><b><i>Example</i></b></h2>
+                <div class="example">
+                    <p>Plaintext: "Hello, World!"</p>
+                    <p>Key: "ThisIsASecretKey"</p>
+                    <p>RC4 Encrypted (Base64): "2HfLc01yX69uMy368Q=="</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

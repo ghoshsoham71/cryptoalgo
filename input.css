@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply max-w-3xl mx-auto px-4 py-8;
+  }
+
+  .button {
+    @apply inline-block bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 transition-colors duration-200;
+  }
+
+  .back-button {
+    @apply inline-block bg-gray-200 text-black p-3 rounded-full text-xl hover:bg-gray-300 transition-colors duration-200;
+  }
+
+  textarea, select, input[type="text"] {
+    @apply w-full p-2 border border-gray-300 rounded-md mb-4;
+  }
+
+  textarea {
+    @apply h-48;
+  }
+
+  #cipher-output {
+    @apply h-24;
+  }
+
+  table {
+    @apply w-full border-collapse mt-4;
+  }
+
+  th, td {
+    @apply border border-gray-300 p-2 text-left;
+  }
+
+  th {
+    @apply bg-gray-100;
+  }
+}
+
+body {
+  @apply font-mono leading-relaxed;
+}
+
+h1 {
+  @apply text-2xl font-bold text-center mb-6;
+}
+
+.button-container {
+  @apply flex justify-between;
+}
+
+@screen sm {
+  .button-container {
+    @apply flex-col;
+  }
+
+  .button {
+    @apply mb-4;
+  }
+}

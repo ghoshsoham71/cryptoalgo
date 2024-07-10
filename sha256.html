@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHA-256 Algorithm - cryptoalgo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="learn_more.html" class="back-button">&#8592;</a>
+        <div class="algorithm-detail">
+            <h1>SHA-256 (Secure Hash Algorithm 256-bit)</h1>
+            
+            <section>
+                <h2><b>Overview</b></h2>
+                <p>SHA-256 is a part of the SHA-2 family of cryptographic hash functions, designed by the U.S. National Security Agency (NSA) and published in 2001.</p>
+            </section>
+            
+            <section>
+                <h2><b>Working</b></h2>
+                <p>SHA-256 operates on 512-bit blocks of data. The input is first padded and then processed in 512-bit chunks. The algorithm uses a series of logical functions, constants, and word operations to iteratively generate a 256-bit hash.</p>
+            </section>
+            
+            <section>
+                <h2><b>Application</b></h2>
+                <p>SHA-256 is used in various security applications and protocols, including TLS, SSL, PGP, SSH, and IPsec. It's also used in blockchain technology, including Bitcoin, for verifying transactions.</p>
+            </section>
+
+            <section>
+                <b>Time Complexity: </b>O(N) For a message of N bits, the number of 512-bit blocks is N/512. The overall complexity is the product of the number of blocks and the complexity per block.</i><br>
+                <br>
+                <b>Space Complexity: </b>O(1) Includes message schedule storage, working variables, and intermediate hash values.</i>
+            </section>
+            
+            <section>
+                <h2><b><i>Example</i></b></h2>
+                <div class="example">
+                    <p>Input: "Hello, World!"</p>
+                    <p>SHA-256 Hash: dffd6021bb2bd5b0af676290809ec3a53191dd81c7f70a4b28688a362182986f</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyze Cryptographic Algorithms</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button">&#8592;</a>
+        <h1>Analyze Cryptographic Encryption Algorithms</h1>
+        <p style="font-size:0.9vw"><i>This analysis is done with <b>industry standard</b> lengths of plaintexts and keys for the cryptographic algorithms. <br>Please note that multiple approximations and estimations have been made for calculations.</i></p>
+        <p style="font-size:0.9vw"><i>For details regarding time complexity of the algorithms, refer to the section about the description of the algorithms. For a graphical analysis of time complexity click on the respective algorithms. Algorithms with no standard plaintext size are computed with size of plaintext equal to 256 bits.</i></p>
+        <br>
+        <table id="algorithm-table">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">Algorithm Name</th>
+                    <th onclick="sortTable(1)">Key Size (bits)</th>
+                    <th onclick="sortTable(2)">Time Taken (&#xb5;s)</th>
+                    <th onclick="sortTable(3)">Maximum Brute Force Attempts</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows will be dynamically populated using JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

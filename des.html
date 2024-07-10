@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>33DES Algorithm - cryptoalgo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="learn_more.html" class="back-button">&#8592;</a>
+        <div class="algorithm-detail">
+            <h1>3DES (Triple Data Encryption Standard)</h1>
+            
+            <section>
+                <h2><b>Overview</b></h2>
+                <p>3DES (Triple Data Encryption Standard) is a symmetric encryption algorithm that applies the DES cipher three times to each data block. It enhances security by using multiple keys, making it more resistant to brute-force attacks compared to DES.</p>
+            </section>
+            
+            <section>
+                <h2><b>Working</b></h2>
+                <p>Triple DES (3DES) applies the Data Encryption Standard (DES) cipher algorithm three times to each data block. It uses either two or three unique keys, enhancing security compared to DES. Modes include ECB, CBC, and CFB for varied applications.</p>
+            </section>
+            
+            <section>
+                <h2><b>Application</b></h2>
+                <p>The 3DES (Triple Data Encryption Standard) algorithm, an extension of DES, employs three 56-bit keys for enhanced security, performing encryption-decryption-encryption processes to mitigate vulnerabilities. It's widely used in financial transactions, VPNs, and secure data storage systems.</p>
+            </section>
+            
+            <section>
+                <b>Time Complexity: </b>O(N) <i>Both encryption and decryption involve multiple rounds (typically 48 rounds in 3DES), each consisting of operations like permutation, substitution, and key mixing, which are linear in relation to the size of the data.</i><br>
+                <br>
+                <b>Space Complexity: </b>O(1) <i>additional space beyond the data being encrypted/decrypted.</i>
+            </section>
+            
+            <section>
+                <h2><b><i>Example</i></b></h2>
+                <div class="example"
+                    <p>Plaintext: "Hello, World!"</p>
+                    <p>Key: "SecretK1"</p>
+                    <p>3DES Encrypted (Base64): "tN+oG+79Y8Gtg/qS/DTX3w=="</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

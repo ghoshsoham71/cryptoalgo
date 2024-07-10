@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decrypt Cipher Text - cryptoalgo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button">&#8592;</a>
+        <h1 class="title">Decrypt Cipher Text</h1>
+        <select id="algorithm-select">
+            <!-- Options will be dynamically populated using JavaScript -->
+        </select>
+        <textarea id="ciphertext-input" placeholder="Enter ciphertext"></textarea>
+        <input type="text" id="key-input" placeholder="Enter key">
+        <button id="decrypt-button" class="button">Decrypt Ciphertext</button>
+        <div class="result-container">
+        <textarea id="plaintext-output" readonly></textarea>
+        <svg id="copy-icon" class="h-8 w-8 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="9" y="9" width="8" height="8" rx="2" ry="2" />
+        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+        </svg>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

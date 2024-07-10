@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AES Algorithm - cryptoalgo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="learn_more.html" class="back-button">&#8592;</a>
+        <div class="algorithm-detail">
+            <h1>AES (Advanced Encryption Standard)</h1>
+            
+            <section>
+                <h2><b>Overview</b></h2>
+                <p>AES is a symmetric block cipher chosen by the U.S. government to protect classified information. It was established by the U.S. National Institute of Standards and Technology (NIST) in 2001.</p>
+            </section>
+            
+            <section>
+                <h2><b>Working</b></h2>
+                <p>AES operates on a 4×4 column-major order matrix of bytes, termed the state. The key size used for an AES cipher specifies the number of repetitions of transformation rounds: 10 rounds for 128-bit keys, 12 rounds for 192-bit keys, and 14 rounds for 256-bit keys.</p>
+            </section>
+            
+            <section>
+                <h2><b>Application</b></h2>
+                <p>AES is widely used for secure communication in various applications, including wireless security, file encryption, and secure communications over the internet (HTTPS).</p>
+            </section>
+
+            <section>
+                <b>Time Complexity: </b>O(M⋅N<sub>b</sub>⋅N<sub>r</sub>) <i> &#8776; O(1) The total time complexity for encrypting/decrypting a message of M blocks is the product of the time complexity per block and the number of blocks, which are constants- standard number of rounds are 10 (128 bits), 12 (192 bits) or 14 (256 bits) depending on the key size.</i><br>
+                <br>
+                <b>Space Complexity: </b>O(N<sub>k</sub>⋅(N<sub>r</sub>+1)+N<sub>b</sub><sup>2</sup>) <i> &#8776; O(1) Includes both the expanded key storage and the state storage.</i>
+            </section>
+            
+            <section>
+                <h2><b><i>Example</i></b></h2>
+                <div class="example">
+                    <p>Plaintext: "Hello, World!"</p>
+                    <p>Key: "ThisIsASecretKey"</p>
+                    <p>AES-128 Encrypted (Base64): "8HB+o0MlPo1eyGsQs0kofw=="</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

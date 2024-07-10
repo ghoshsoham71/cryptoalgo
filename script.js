@@ -209,7 +209,7 @@ function drawPerformanceChart(algoName) {
         data: {
             labels: data.map(d => d.inputSize),
             datasets: [{
-                label: '(x,y) represent plaintext size vs time taken in microseconds',
+                label: '(x,y) -> (plaintext,time)',
                 data: data.map(d => d.complexity),
                 borderColor: 'rgb(75, 192, 192)',
                 tension: 0.1
